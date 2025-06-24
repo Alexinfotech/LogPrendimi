@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/sU6FxZoKEn34nS3d0q/giphy.gif" alt="Running Button Demo" width="600"/>
+  <img src="[https://media.giphy.com/media/sU6FxZoKEn34nS3d0q/giphy.gif](https://i.giphy.com/media/duzpaTbCUy9Vu/giphy.gif)" alt="Running Button Demo" width="600"/>
 </p>
 
 <h1 align="center">🚀 FUGITIVE LOGIN 🚀</h1>
