@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM1MWN1b2l0a3dyY3lzM25wNmsyZjJpZTZmZnN4N3ltaGRhdDRqdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sU6FxZoKEn34nS3d0q/giphy.gif" alt="Running Button Demo" width="600"/>
+  <img src="https://media.giphy.com/media/sU6FxZoKEn34nS3d0q/giphy.gif" alt="Running Button Demo" width="600"/>
 </p>
 
 <h1 align="center">🚀 FUGITIVE LOGIN 🚀</h1>
@@ -16,52 +16,52 @@
 
 ## 🎯 LA MISSIONE
 > Il tuo obiettivo, se decidi di accettarlo, è semplice: **effettuare il login**.  
-> L'ostacolo? Il bottone stesso. Finché le credenziali sono errate, lui scapperà.  
+> L’ostacolo? Il bottone stesso. Finché le credenziali sono errate, lui scapperà.  
 > Inserisci i dati giusti per disattivare il suo protocollo di fuga.
 
 ---
 
 ## 🎨 ANALISI DELLA MINACCIA
 
-| Indicatore Visivo | Livello di Minaccia | Comportamento del Bottone |
-| :---------------: | :-----------------: | :------------------------ |
-| 🟡 **Giallo**     | Basso              | Ti ignora… per ora.       |
-| 🟠 **Arancione**   | Medio              | Sente la tua presenza.    |
-| 🔴 **Rosso**       | **CRITICO**        | **PROTOCOLLO DI FUGA!**   |
-| 🟢 **Verde Flash** | Evasione           | Si è appena spostato.     |
+| Indicatore Visivo | Livello | Comportamento del Bottone |
+| :---------------: | :----: | ------------------------- |
+| 🟡 **Giallo**     | Basso  | Ti ignora… per ora.       |
+| 🟠 **Arancione**  | Medio  | Avverte la tua presenza.  |
+| 🔴 **Rosso**      | Alto   | **Protocollo di fuga!**   |
+| 🟢 **Verde Flash**| Evaso  | Si è appena spostato.     |
 
 ---
 
-## 🛠️ ARCHITETTURA DEL SISTEMA
+## 🛠️ ARCHITETTURA
 
-| Componente   | Ruolo                                           |
-| ------------ | ---------------------------------------------- |
-| `index.html` | **L'Arena** – struttura che contiene la sfida. |
-| `styles.css` | **La Skin** – aspetto e feedback visivo.        |
-| `script.js`  | **Il Cervello** – logica di fuga e di resa.     |
+| File          | Ruolo                                               |
+| ------------- | --------------------------------------------------- |
+| `index.html`  | **Arena** – struttura che contiene la sfida.        |
+| `styles.css`  | **Skin** – aspetto e feedback visivo.               |
+| `script.js`   | **Cervello** – logica di fuga, validazione, resa.   |
 
 ---
 
 ## ⚙️ HACKERARE IL SISTEMA (Configurazione)
 
-Puoi alterare le sue direttive senza terminale: basta editare l’oggetto `CONFIG` all’inizio di **`script.js`**.
+Puoi personalizzare il comportamento modificando l’oggetto `CONFIG` all’inizio di **`script.js`**.
 
 <details>
-<summary>👉 Clicca per il codice di configurazione</summary>
+<summary>👉 Mostra configurazione</summary>
 
 ```javascript
 // Configurazione script.js
 const CONFIG = {
-  // Credenziali per il cessate-il-fuoco
+  // Credenziali per fermare la fuga
   credentials: {
     email: 'test@test.com',
     password: 'password'
   },
 
-  // Sensori di prossimità (in pixel)
+  // Sensori di prossimità (pixel)
   distances: {
     near:   100, // panico → fuga
-    medium: 200  // allerta
+    medium: 200  // allerta intermedia
   },
 
   // Classi CSS per gli stati
@@ -73,7 +73,7 @@ const CONFIG = {
     running: 'running'
   },
 
-  // Durata del flash di trionfo (ms)
+  // Durata del flash di successo (ms)
   animations: {
     runningDuration: 300
   }
