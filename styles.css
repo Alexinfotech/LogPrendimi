@@ -1,0 +1,119 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 8px #00f2fe44;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 16px #00f2fe;
+}
+
+.button-area {
+    position: relative;
+    height: 150px;
+    margin: 20px 0;
+    border: 2px solid #00f2fe;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#loginBtn {
+    position: absolute;
+    padding: 4px 8px;
+    min-width: 50px;
+    background: linear-gradient(90deg, #00f2fe, #7f53ac);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+/* Rosso quando il mouse è molto vicino (<100px) */
+#loginBtn.mouse-near {
+    background: linear-gradient(90deg, #ff0000, #cc0000);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+    transform: scale(1.15);
+}
+
+/* Verde solo mentre sta scappando dopo essere stato toccato */
+#loginBtn.running {
+    background: linear-gradient(90deg, #00ff00, #00cc00);
+    box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
+    transform: scale(1.2);
+}
+
+/* Arancione a media distanza (100-200px) */
+#loginBtn.medium-distance {
+    background: linear-gradient(90deg, #ff8800, #ff6600);
+    box-shadow: 0 0 10px rgba(255, 136, 0, 0.4);
+}
+
+/* Giallo quando è lontano (>200px) */
+#loginBtn.far-distance {
+    background: linear-gradient(90deg, #ffff00, #ffcc00);
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.4);
+}
+
+#loginBtn:not(.mouse-near):not(.running):not(.medium-distance):not(.far-distance) {
+    background: linear-gradient(90deg, #00f2fe, #7f53ac);
+}
+
+#welcome {
+    text-align: center;
+    color: #00f2fe;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
