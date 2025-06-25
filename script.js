@@ -1,7 +1,7 @@
-// Configurazione script.js
+ail// Configurazione script.js
 const CONFIG = {
     credentials: {
-        email: 'test@test.com',
+        email: 'email@email.com',
         password: 'password'
     },
     distances: {
